@@ -110,14 +110,6 @@ nav.site {
 nav.site a { color: var(--text3); text-decoration: none; }
 nav.site a:hover { color: var(--amber); }
 
-/* The address is shown literally so it stays readable and copyable even when
-   the visitor has no mailto: handler registered. Opt out of the nav's
-   uppercasing — an email address in caps is harder to read and to transcribe. */
-nav.site a.email {
-  text-transform: none;
-  letter-spacing: 0.02em;
-}
-
 footer { margin-top: 2rem; }
 
 table {
