@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Morning Report</title>
+<meta name="description" content="What Morning Report accesses, how it is used, and what leaves your device.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Misochi LLC</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Morning Report for iOS · Effective 24 July 2026</p>
+
+  <hr>
+
+  <p class="lede">Morning Report reads your calendar, reminders, inbox, and location to build a single daily brief. All of it is processed on your device. Misochi operates no server, and none of this data is transmitted to us.</p>
+
+  <h2>The short version</h2>
+
+  <div class="card">
+    <ul>
+      <li>There is no Misochi account and no Misochi server.</li>
+      <li>Your calendar events, reminders, and email content never leave your device except as described under <a href="#third-parties">Third Parties</a>.</li>
+      <li>Email prioritization runs on-device using Apple's on-device models.</li>
+      <li>We use no analytics, no advertising, and no tracking of any kind.</li>
+      <li>Deleting the app deletes everything it stored.</li>
+    </ul>
+  </div>
+
+  <h2>What the app accesses</h2>
+
+  <p>Each source below is optional and individually controlled in Settings. The app requests permission at the moment you enable a source, and works without any of them.</p>
+
+  <div class="scroll-x">
+  <table>
+    <tr><th>Source</th><th>What is read</th><th>Why</th></tr>
+    <tr>
+      <td>Calendar</td>
+      <td>Today's events: title, start and end time, location</td>
+      <td>To list your day's schedule in the brief</td>
+    </tr>
+    <tr>
+      <td>Reminders</td>
+      <td>Incomplete reminders due today, plus overdue ones: title and due date</td>
+      <td>To surface what is due in the brief</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Approximate location while using the app, to roughly one kilometer</td>
+      <td>To retrieve local weather conditions</td>
+    </tr>
+    <tr>
+      <td>Gmail (off by default)</td>
+      <td>Sender, subject, and a short preview snippet of recent messages, plus your unread count</td>
+      <td>To identify the few emails worth knowing about before your day starts</td>
+    </tr>
+  </table>
+  </div>
+
+  <h3>Gmail access is read-only</h3>
+
+  <p>If you choose to connect a Google account, the app requests a single permission: <strong>read-only Gmail access</strong> (<code>gmail.readonly</code>). It cannot send, modify, archive, label, or delete anything in your mailbox. It does not read attachments, and it does not download full message bodies — only the sender, subject, and the short preview snippet Google returns.</p>
+
+  <p>You sign in with Google directly. Your Google password is never seen by or shared with the app.</p>
+
+  <h2>How your data is used</h2>
+
+  <p>Everything the app reads is used for one purpose: assembling your daily brief. It is not repurposed, profiled, sold, or used to train any model.</p>
+
+  <p>Email prioritization — deciding which messages matter and which category they belong to — runs entirely on your device, using Apple's on-device language models where available and on-device text embeddings otherwise. Your email content is not sent to any external service for this, including any third-party AI service.</p>
+
+  <h2 id="third-parties">Third parties</h2>
+
+  <p>Two companies receive data as a direct consequence of using the app. Neither receives it from us; the app talks to them from your device.</p>
+
+  <h3>Apple</h3>
+  <p>To show weather, the app sends your approximate location to Apple's WeatherKit service to retrieve local conditions. Apple's handling is governed by the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+
+  <h3>Google</h3>
+  <p>If you connect a Google account, the app authenticates with Google and requests your messages from the Gmail API. This is your own account and your own data; Google's handling is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <p>There are no other third parties. No analytics provider, no crash reporter, no advertising network, no data broker.</p>
+
+  <h2>What is stored, and where</h2>
+
+  <p>The app stores the following <strong>locally on your device only</strong>:</p>
+
+  <ul>
+    <li><strong>Your most recent brief</strong> — so it can be shown instantly on open. Only the latest one is kept; each refresh replaces the previous one.</li>
+    <li><strong>Your preferences</strong> — wake time and which sources are enabled.</li>
+    <li><strong>Your inbox categories</strong> — the names and descriptions you define.</li>
+    <li><strong>Your Google sign-in token</strong>, if you connected an account, held in the iOS Keychain by Google's official sign-in library.</li>
+  </ul>
+
+  <p>None of this is backed up to a Misochi server, because none exists. It may be included in your own iCloud or encrypted device backups, under your control and Apple's terms.</p>
+
+  <h2>Notifications</h2>
+
+  <p>If you enable notifications, the app schedules a local morning notification whose text may include a short preview of your brief. It is generated and delivered on your device and is not routed through any push server.</p>
+
+  <h2>Your choices</h2>
+
+  <ul>
+    <li><strong>Turn off any source</strong> in the app's Settings at any time.</li>
+    <li><strong>Revoke system permissions</strong> — Calendar, Reminders, Location, Notifications — in iOS Settings under Morning Report.</li>
+    <li><strong>Disconnect Google</strong> by signing out in the app, and revoke the app's access entirely at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Delete everything</strong> by deleting the app. Because all storage is local, removing the app removes the stored brief, preferences, categories, and saved token.</li>
+  </ul>
+
+  <p>There is no account to delete and no deletion request to file, because we hold nothing about you. If you believe we somehow hold data about you, write to <a href="mailto:kevin@misochi.com">kevin@misochi.com</a> and we will respond.</p>
+
+  <h2>Children</h2>
+
+  <p>Morning Report is not directed to children under 13, and we do not knowingly collect information from them.</p>
+
+  <h2>Changes</h2>
+
+  <p>If this policy changes, the effective date above changes and the revised policy is posted here. Material changes affecting how your data is handled will be surfaced in the app.</p>
+
+  <h2>Contact</h2>
+
+  <p>Misochi LLC — <a href="mailto:kevin@misochi.com">kevin@misochi.com</a></p>
+
+  <nav class="site">
+    <a href="/">Home</a>
+    <a href="/support">Support</a>
+    <a href="mailto:kevin@misochi.com">Email</a>
+  </nav>
+
+  <footer>
+    <p class="meta">&copy; 2026 Misochi LLC</p>
+  </footer>
+
+</div>
+</body>
+</html>
