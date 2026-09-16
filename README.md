@@ -7,6 +7,7 @@ directory-per-page:
 ```
 index.html          → /
 privacy/index.html  → /privacy
+terms/index.html    → /terms
 support/index.html  → /support
 style.css           → shared styles
 ```
@@ -59,8 +60,8 @@ scope rejects a privacy policy URL that is not served over TLS.
 
 - [x] Legal entity name — Misochi LLC
 - [x] Contact email — `kevin@misochi.com`, verified receiving mail 2026-07-24
-- [ ] **Governing law / jurisdiction** — deliberately omitted rather than
-      guessed. Add a clause if you want one.
+- [x] **Governing law / jurisdiction** — California, Sacramento County, set in
+      the Terms of Service. Confirm this is the venue you want.
 - [ ] **Effective date** — currently 24 July 2026. Update to the publish date.
 - [ ] **App Store availability** — the landing page says Morning Report is not
       yet available. Update at launch.
