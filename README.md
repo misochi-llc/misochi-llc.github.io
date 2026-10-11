@@ -2,15 +2,31 @@
 
 Public site for **Misochi LLC**. Static HTML served from this repository's root
 via GitHub Pages. No build step, no Jekyll (`.nojekyll`). Clean URLs come from
-directory-per-page:
+directory-per-page, with each app under its own folder:
 
 ```
-index.html          → /
-privacy/index.html  → /privacy
-terms/index.html    → /terms
-support/index.html  → /support
-style.css           → shared styles
+index.html                         → /                          company + app list
+morning-report/index.html          → /morning-report            app page
+morning-report/privacy/index.html  → /morning-report/privacy
+morning-report/terms/index.html    → /morning-report/terms
+morning-report/support/index.html  → /morning-report/support
+style.css                          → shared styles
 ```
+
+### Adding an app
+
+1. Create `<app-slug>/index.html`, plus `privacy/`, `terms/`, and `support/`
+   under it as the app needs them. Copy Morning Report's pages as a starting
+   point and update the nav links.
+2. Add a `<li class="card">` for it to the `.products` list in `index.html`.
+
+### Old URLs
+
+Morning Report's pages used to live at `/privacy`, `/terms`, and `/support`.
+Those folders now hold forwarding pages to the new paths (GitHub Pages has no
+server-side redirects). **Keep them**: the shipped app's Settings screen, the
+Google OAuth consent screen, and App Store Connect may still link to the old
+URLs.
 
 The app itself lives in a separate private repository.
 
@@ -50,7 +66,7 @@ https://misochi-llc.github.io/
 5. Verify:
 
    ```sh
-   curl -sSI https://misochi.com/privacy | head -1   # expect 200
+   curl -sSI https://misochi.com/morning-report/privacy | head -1   # expect 200
    ```
 
 HTTPS is not optional: Google's OAuth verification for the restricted Gmail
