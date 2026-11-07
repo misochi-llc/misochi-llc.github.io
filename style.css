@@ -116,6 +116,37 @@ nav.site {
   text-transform: uppercase;
 }
 
+/* App screenshots — a grid of phone screens with captions.
+   Two columns on phones, three once there's room. */
+.screens {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+@media (min-width: 560px) {
+  .screens { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.screens figure { margin: 0; }
+
+.screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+}
+
+.screens figcaption {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text2);
+  margin-top: 0.6rem;
+}
+
 nav.site a { color: var(--text3); text-decoration: none; }
 nav.site a:hover { color: var(--amber); }
 
