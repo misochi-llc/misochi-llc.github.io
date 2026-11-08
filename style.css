@@ -147,6 +147,93 @@ nav.site {
   margin-top: 0.6rem;
 }
 
+.screens a { display: block; border-radius: 14px; cursor: zoom-in; }
+.screens a:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+.lightbox-open { overflow: hidden; }
+
+.lightbox {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.92);
+  color: var(--text);
+}
+
+.lightbox:focus { outline: none; }
+.lightbox::backdrop { background: transparent; }
+
+.lightbox figure {
+  height: 100%;
+  margin: 0;
+  padding: 3.5rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+
+.lightbox img {
+  display: block;
+  max-width: 100%;
+  min-height: 0;
+  flex: 0 1 auto;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  pointer-events: auto;
+}
+
+.lightbox figcaption {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text2);
+  text-align: center;
+}
+
+.lightbox-count {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  color: var(--text3);
+  margin-left: 0.5rem;
+}
+
+.lightbox button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--hairline);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  font: 1.6rem/1 ui-sans-serif, -apple-system, system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.lightbox button:hover { color: var(--amber); }
+.lightbox button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+.lightbox-close { top: 0.75rem; right: 0.75rem; }
+.lightbox-prev, .lightbox-next { top: 50%; transform: translateY(-50%); }
+.lightbox-prev { left: 0.75rem; }
+.lightbox-next { right: 0.75rem; }
+
+@media (max-width: 559px) {
+  .lightbox figure { padding-bottom: 4.25rem; }
+  .lightbox-prev, .lightbox-next { top: auto; bottom: 0.75rem; transform: none; }
+}
+
 nav.site a { color: var(--text3); text-decoration: none; }
 nav.site a:hover { color: var(--amber); }
 
